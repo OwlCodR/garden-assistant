@@ -1,6 +1,10 @@
 # :blossom: Garden Assistant
 > It is my first Android project ever. It has been made in 2018 when I was studying at SAMSUNG IT SCHOOL. 
 
+### :iphone: Preview
+![Gif](https://github.com/OwlCodR/garden-assistant/tree/main/preview/Garden-Assistant.gif "Gif")
+
+
 ### :package: Experience
 - Java and Android basics
 - Bluetooth communication with Arduino module
