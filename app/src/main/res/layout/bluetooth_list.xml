@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayoutBluetooth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/bluetooth_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:indeterminate="true"
+        android:padding="15dip" />
+
+    <TextView
+        android:id="@+id/bluetooth_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/bluetooth_progress"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="15dip"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <me.aflak.pulltorefresh.PullToRefresh
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="70dp">
+
+        <ListView
+            android:id="@+id/bluetooth_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/bluetooth_progress"
+            android:layout_weight="1" />
+
+    </me.aflak.pulltorefresh.PullToRefresh>
+
+</RelativeLayout>

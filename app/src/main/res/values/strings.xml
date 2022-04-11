@@ -1,0 +1,611 @@
+<resources>
+    <string name="app_name">Garden Assistant</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Настройки</string>
+    <string name="action_change_greenhouse_name">Изменить название</string>
+    <string name="action_delete_greenhouse">Удалить теплицу</string>
+
+    <string name="vegetables">Овощи</string>
+    <string name="firebase_access">Сохранить этот список овощей\n или загрузить его из Облака?</string>
+    <string name="empty">(Пусто)</string>
+    <string name="save_question">Сохранить?</string>
+    <string name="error">В Облаке пусто!</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="phone_number_example">8 844 333 22 11</string>
+    <string name="add_phone_number">Укажите номер телефона, на \nкоторый будут приходить СМС-сообщения\n с информацией о теплице</string>
+    <string name="check_email">На вашу почту было отправлено письмо для подтверждения регистрации!</string>
+    <string name="error_firebase">К сожалению, в Облаке пока что\n ничего нет. Ваш список овощей\n не был изменён</string>
+    <string name="connect_to_greenhouse">Подключитесь к теплице!</string>
+    <string name="garden">Мой Огород</string>
+    <string name="login">Вход</string>
+    <string name="register">Регистрация</string>
+    <string name="greenhouse">Моя Теплица</string>
+    <string name="search_hint">Найти растение</string>
+    <string name="humidity">Влажность:</string>
+    <string name="temperature">Температура:</string>
+    <string name="recommend_temperature">Рекомендуемая t: </string>
+    <string name="depth_of_landing">Глубина Посадки: </string>
+    <string name="plant_distance">S Между Растениями: </string>
+    <string name="row_distance">S Между Грядками: </string>
+    <string name="plant_days">Время Созревания: </string>
+    <string name="developers">►Разработчик: Maxim Lyovkin\n\n►Связаться:\ngarden.assistant.app@gmail.com - пишите об ошибках и ваших предложениях</string>
+    <string name="change_name">Измените название теплицы:</string>
+    <string name="new_name">Новое название</string>
+    <string name="action_exit">Выйти</string>
+    <string name="action_add_greenhouse">Добавить Теплицу</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="vegetables">
+        <item>Помидор</item>
+        <item>Огурец</item>
+        <item>Свекла</item>
+        <item>Болгарский Перец</item>
+        <item>Красный Перец</item>
+        <item>Лук Репчатый</item>
+        <item>Чеснок</item>
+        <item>Морковь</item>
+        <item>Капуста</item>
+        <item>Тыква</item>
+        <item>Баклажан</item>
+        <item>Картофель</item>
+        <item>Помидоры Черри</item>
+        <item>Брокколи</item>
+        <item>Артишок</item>
+        <item>Горох</item>
+        <item>Кабачок</item>
+        <item>Редис</item>
+        <item>Патиссон</item>
+    </string-array>
+    <string-array name="artichoke">
+        <item>Артишок</item>
+        <item>
+            Особенности:\n
+            ♦Плод требует много места\n\n
+            ♦Любит прямой солнечный свет\n\n
+            ♦Нуждается в обильном поливе\n\n
+            ♦Необходимо содержать в тепле\n\n
+            ♦От жары снижается качество плодов\n\n
+            ♦Можно выращивать в теплице/огороде
+        </item>
+        <item>
+            Согласно принятому определению, артишок – это травянистое растение Carciofi из семейства Астровых родом из Азии, распространенный в культуре потребления Средиземноморья.
+            В кулинарии употребляется молодой нераскрывшийся бутон сизо-фиолетового цветка, который напоминает чертополох из-за многослойной чешуи.
+            Из 140 разновидностей растений в пищу можно использовать только 40 видов. Центром выращивания артишоков является Калифорния.
+            На рынке встречаются круглые и вытянутые бутоны, разных оттенков, с шипами или без них. Иногда встречается бутон с корзинкой.
+        </item>
+        <item>20-25°С</item>
+        <item>5 см</item>
+        <item>75 см</item>
+        <item>90 см</item>
+        <item>65 дней</item>
+    </string-array>
+    <string-array name="aubergine">
+        <item>Баклажан</item>
+        <item>
+            Особенности:\n
+            ♦Нуждается в обильном поливе\n\n
+            ♦Необходимо содержать в тепле\n\n
+            ♦Любит солнечный свет\n\n
+            ♦Рассада не переносит сквозняки\n\n
+            ♦Лучше выращивать в теплице
+        </item>
+        <item>
+            Баклажан (паслен темноплодный) – многолетнее травянистое растение, принадлежащее к семейству Пасленовых.
+            Имеет плоды, применяемые в кулинарии. Окультуривать его начали 1500 лет назад в тропических областях Индии, Среднего Востока и Южной Азии.
+            В Россию баклажан впервые завезли торговцы в 17 веке. Необычное растение понравилось людям и постепенно стало популярным овощем на огороде и продуктом питания в кулинарии.
+            Сначала баклажан распространился в центральных и южных регионах, а позднее попал на север.
+        </item>
+        <item>23-27°С</item>
+        <item>1 см</item>
+        <item>70 см</item>
+        <item>70 см</item>
+        <item>120 дней</item>
+    </string-array>
+    <string-array name="bulgarian_pepper">
+        <item>Болгарский Перец</item>
+        <item>
+            Особенности:\n
+            ♦Нуждается в обильном поливе\n\n
+            ♦Необходимо содержать в тепле\n\n
+            ♦Не любит сильного ветра\n\n
+            ♦Любит солнечный свет\n\n
+            ♦Не любит пикировку\n\n
+            ♦Лучше выращивать в теплице
+        </item>
+        <item>
+            Болгарский перец – это один из сортов сладкого Овощного перца, принадлежащего к семейству Пасленовые.
+            В природе в диком виде овощной перец встречается в тропических регионах Америки и является многолетним растением,
+            окультуренный перец разводится практически на всех континентах и является однолетним. Плоды болгарского перца могут
+            быть красного, оранжевого, коричневого или желтого цветов, различной величины и формы.
+        </item>
+        <item>18-25°С</item>
+        <item>1 см</item>
+        <item>70 см</item>
+        <item>40 см</item>
+        <item>90 дней</item>
+    </string-array>
+    <string-array name="broccoli">
+        <item>Брокколи</item>
+        <item>
+            Особенности:\n
+            ♦Плод любит подкормки\n\n
+            ♦Нуждается в поливе\n\n
+            ♦Не любит жару\n\n
+            ♦Можно выращивать в теплице/огороде
+        </item>
+        <item>
+            Брокколи — овощная однолетняя культура, подвид цветной капусты, включающий в себя спаржевые сорта с головками зеленого и фиолетового цвета.
+            Она во многом схожа с цветной капустой, но головка её более рыхлая. Брокколи, полезные свойства и неприхотливость в
+            выращивании которой первыми обнаружили итальянцы, отваривают, обжаривают, консервируют, замораживают, готовят с ней вкусные супы и салаты.
+        </item>
+        <item>15-20°С</item>
+        <item>1 см</item>
+        <item>50 см</item>
+        <item>40 см</item>
+        <item>70 дней</item>
+    </string-array>
+    <string-array name="tomato">
+        <item>Помидор</item>
+        <item>
+            Особенности:\n
+            ♦Плод любит солнечный свет\n\n
+            ♦Любит суглинистую почву\n\n
+            ♦Любит влагу\n\n
+            ♦Любит удобрения\n\n
+            ♦Любит тепло\n\n
+            ♦Можно выращивать в теплице/огороде
+        </item>
+        <item>
+           Томат, или помидор — однолетнее или многолетнее травянистое растение, вид рода
+          Паслён семейства Паслёновые. Возделывается как овощная культура.Различие между
+          научным и бытовым (кулинарным) представлением о плодах, ягодаx, фруктах, овощах
+          в случае томата (как и некоторых других растений, например, огурцов) приводит к
+          путанице. Плоды томата — с точки зрения ботаники — многогнёздные синкарпные ягоды.
+          В английском языке не существует разницы между терминами фрукт и плод. В 1893 году
+          Верховный суд США единогласно признал, что при взимании таможенных сборов помидоры,
+          по способу их использования, следует считать овощами, поскольку они подавались на обед,
+          а не на десерт (хотя суд отметил, что с ботанической точки зрения томаты — это ягоды).
+        </item>
+        <item>20-24°С</item>
+        <item>1 см</item>
+        <item>90 см</item>
+        <item>95 см</item>
+        <item>75 дней</item>
+    </string-array>
+    <string-array name="cucumber">
+        <item>Огурец</item>
+        <item>
+            Особенности:\n
+            ♦Плод любит солнечный свет\n\n
+            ♦Любит суглинистую почву\n\n
+            ♦Любит влагу\n\n
+            ♦Не переносит обилие удобрений\n\n
+            ♦Любит тепло\n\n
+            ♦Можно выращивать в теплице/огороде
+        </item>
+        <item>
+           Огурец обыкновенный, или Огурец посевной — однолетнее травянистое растение,
+          вид рода Огурец семейства Тыквенные, овощная культура. Огурец появился в культуре
+          более 6 тысяч лет назад. Родина этого вида — тропические и субтропические районы
+          Индии, подножия Гималаев, где он до сих пор растёт в естественных условиях. Упомянут
+          в Библии как овощ Египта.Эта культура была известна уже грекам, от которых перешла к
+          римлянам, и в эпоху Карла Великого была распространена уже по Средней Европе.
+        </item>
+        <item>23-26°С</item>
+        <item>2 см</item>
+        <item>30 см</item>
+        <item>120 см</item>
+        <item>65 дней</item>
+    </string-array>
+    <string-array name="peas">
+        <item>Горох</item>
+        <item>
+            Особенности:\n
+            ♦Нуждается в поливе\n\n
+            ♦Любит тепло\n\n
+            ♦Плод любит безветренную погоду\n\n
+            ♦Лучше выращивать в огороде
+        </item>
+        <item>
+            Горох – самое популярное растение из бобовых. Это объясняется тем, что его несложно выращивать, он дает богатый урожай, хорошо насыщает, его нетрудно готовить.
+            Также горох известен своими лечебными свойствами, что обусловлено его уникальным составом: в нем содержится много, в том числе и очень редких, витаминов и минералов.
+        </item>
+        <item>12-21°С</item>
+        <item>5 см</item>
+        <item>10 см</item>
+        <item>50 см</item>
+        <item>60 дней</item>
+    </string-array>
+    <string-array name="tomatoes_cherry">
+        <item>Помидоры Черри</item>
+        <item>
+            Особенности:\n
+            ♦Плод любит солнечный свет\n\n
+            ♦Любит суглинистую почву\n\n
+            ♦Любит влагу\n\n
+            ♦Любит обилие удобрений\n\n
+            ♦Любит тепло\n\n
+            ♦Можно выращивать в теплице/огороде
+        </item>
+        <item>
+           Томат черри — разновидность томатов с небольшими плодами (ещё одно название —
+          Вишнёвый томат), культивируется с начала 1800-х годов. Считается, что они произошли
+          из Перу или северной части Чили. Размеры томатов черри разнообразны, некоторые
+          сравнимы с мячом для гольфа. Форма плода от сферической до слегка вытянутой. Обычно
+          красные, хотя существуют сорта с жёлтыми, зелёными и чёрными плодами.
+        </item>
+        <item>21-27°С</item>
+        <item>1 см</item>
+        <item>50 см</item>
+        <item>60 см</item>
+        <item>80 дней</item>
+    </string-array>
+    <string-array name="zucchini">
+        <item>Кабачок</item>
+        <item>
+            Особенности:\n
+            ♦Нуждается в поливе\n\n
+            ♦Любит тепло\n\n
+            ♦Любит солнечный свет\n\n
+            ♦Можно выращивать в теплице/огороде
+        </item>
+        <item>
+                Кабачок – это одна из разновидностей обыкновенной тыквы. Плоды растения употребляют в пищу.
+            Они могут быть желтого, черного, белого или зеленого цвета. Съедобная мякоть имеет нежный и приятный вкус.
+            Она хорошо сочетается с различными овощами.
+        </item>
+        <item>15-24°С</item>
+        <item>2 см</item>
+        <item>100 см</item>
+        <item>90 см</item>
+        <item>110 дней</item>
+    </string-array>
+    <string-array name="cabbage">
+        <item>Капуста</item>
+        <item>
+            Особенности:\n
+            ♦Плод плохо переносит затенение\n\n
+            ♦Нуждается в поливе\n\n
+            ♦Любит тепло\n\n
+            ♦Любит солнечный свет\n\n
+            ♦Не выносит жару\n\n
+            ♦Можно выращивать в теплице/огороде
+        </item>
+        <item>
+                Капуста представляет собой древнейшее растение семейства крестоцветных. Она имеет большое разнообразие видов.
+            Произрастает капуста практически во всех странах с умеренным климатом. Основной зоной выращивания данного овоща в
+            России является нечерноземная часть Сибири. Капуста произрастает повсеместно, но наиболее распространена именно в этой зоне.
+            Капусте присущи гладкие или морщинистые листья с большими прожилками, имеющие более светлый цвет ближе к центру.
+            Корневая система овоща хорошо разветвленная и довольна мощная.
+        </item>
+        <item>10-17°С</item>
+        <item>1 см</item>
+        <item>45 см</item>
+        <item>90 см</item>
+        <item>75 дней</item>
+    </string-array>
+    <string-array name="potato">
+        <item>Картофель</item>
+        <item>
+            Особенности:\n
+            ♦Плохо переносит затемнение\n\n
+            ♦Нуждается в поливе\n\n
+            ♦Любит тепло\n\n
+            ♦Любит солнечный свет\n\n
+            ♦Не выносит недостаток влаги\n\n
+            ♦Нельзя выращивать в теплице
+        </item>
+        <item>
+           Картофель - многолетнее клубненосное травянистое растение из рода Паслён семейства Паслёновые.
+          Клубни картофеля являются важным продуктом питания, в отличие от ядовитых плодов.Клубни созревают в
+          августе — сентябре.Родина картофеля - Южная Америка, где до сих пор можно встретить дикорастущий картофель.
+          Введение картофеля в культуру было начато примерно 14 тыс. лет назад индейцами Южной Америки. Они не только
+          употребляли картофель в пищу, но и поклонялись ему, считая одухотворённым существом.
+        </item>
+        <item>10-17°С</item>
+        <item>10 см</item>
+        <item>30 см</item>
+        <item>60 см</item>
+        <item>90 дней</item>
+    </string-array>
+    <string-array name="beet">
+        <item>Свекла</item>
+        <item>
+            Особенности:\n
+            ♦Плод любит тепло\n\n
+            ♦Не выносит жару\n\n
+            ♦Не выносит обилие влаги\n\n
+            ♦Не переносит заморозки\n\n
+            ♦Не переносит обилие удобрений\n\n
+            ♦Можно выращивать в теплице/огороде
+        </item>
+        <item>
+           Свекла столовая, или свекла обыкновенная – одно-, двух- или многолетнее травянистое растение,
+          представитель семейства Амарантовые. В некоторых областях России, в Украине и
+          Беларуси чаше употребляется название буряк. Опыляется перекрестно. Выращивается в основном
+          ради корнеплодов, но листья могут использоваться на корм скоту.Свекла выдерживает засоление гораздо
+          легче, чем морковь, но чувствительна к кислотности почвы, рН-5 приводит к гибели растений.
+        </item>
+        <item>18-28°С</item>
+        <item>2 см</item>
+        <item>15 см</item>
+        <item>45 см</item>
+        <item>60 дней</item>
+    </string-array>
+    <string-array name="onion">
+        <item>Лук Репчатый</item>
+        <item>
+            Особенности:\n
+            ♦Плод любит солнечный свет\n\n
+            ♦Не переносит обилие влаги\n\n
+            ♦Любит удобрения\n\n
+            ♦Любит тепло\n\n
+            ♦Можно выращивать в теплице/огороде
+        </item>
+        <item>
+           Лук репчатый — многолетнее травянистое растение, вид рода Лук семейства
+          Луковые, широко распространённая овощная культура. В культуре известен свыше
+          5 тысяч лет.Средняя урожайность репчатого лука — около 350 центнеров с гектара.
+          Лучший урожай достигается при температуре 18-20 °С. При температуре ниже 13 °C
+          развитие луковиц замедляется, устойчивость к заболеваниям снижается. При жаркой
+          сухой погоде ухудшается вкус зелени.Выведено множество сортов, различающихся вкусом
+          и количеством луковиц, а также скороспелостью. В Крыму популярен лук с фиолетовой
+          кожурой, так называемый «ялтинский лук». Острые сорта выращиваются в двухлетней
+          культуре, сладкие и полуострые — в однолетней.
+        </item>
+        <item>15-20°С</item>
+        <item>4 см</item>
+        <item>10 см</item>
+        <item>30 см</item>
+        <item>95 дней</item>
+    </string-array>
+    <string-array name="radish">
+        <item>Редис</item>
+        <item>
+            Особенности:\n
+            ♦Длинный световой день плохо влияет на плод\n\n
+            ♦Любит влагу\n\n
+            ♦Любит прохладу\n\n
+            ♦Любит солнечный свет\n\n
+            ♦Плохо переносит обилие удобрений\n\n
+            ♦Нельзя выращивать в теплице
+        </item>
+        <item>
+           Редис — съедобное растение и выращивается как овощ во многих странах мира. Его название
+          происходит от лат. radix — корень.В пищу обычно употребляют корнеплоды, которые имеют диаметр
+          от 2,5 см и покрыты тонкой кожей, окрашенной в красный, розовый или бело-розовый цвет. Корнеплоды
+          редиса имеют острый вкус. Такой типичный вкус редиса обусловлен содержанием в растении горчичного
+          масла.Кроме употребления в пищу редис также часто используется для маркировки линии посевов других
+          овощных культур, таких как лук или морковь.
+        </item>
+        <item>6-20°С</item>
+        <item>1 см</item>
+        <item>5 см</item>
+        <item>15 см</item>
+        <item>30 дней</item>
+    </string-array>
+    <string-array name="chili_pepper">
+        <item>Красный перец</item>
+        <item>
+            Особенности:\n
+            ♦Плод любит солнечный свет\n\n
+            ♦Любит рыхлую почву\n\n
+            ♦Любит влагу\n\n
+            ♦Любит удобрения\n\n
+            ♦Любит тепло\n\n
+            ♦Можно выращивать в теплице/огороде
+        </item>
+        <item>
+           Красный острый перец — свежие или высушенные плоды определённых сортов тропического
+          полукустарника Capsicum annuum; пряность, имеющая жгучий вкус.Название перца в русском
+          языке созвучно с названием страны Чили, однако происходит от «chilli» из астекских языков
+          науатль (современная Мексика) и переводится как «красный». Родина этого растения — тропическая
+          Америка. Как свидетельствуют находки в перуанских погребениях, его культивировали здесь ещё
+          задолго до прибытия европейцев в Америку. Испанцы и португальцы, которые во время своих мореплаваний
+          открыли эти специи для европейцев, назвали его «индианским». В настоящее время острый перец выращивают
+          в большинстве стран, расположенных в тропиках, но больше всего — в Индии и Таиланде.
+        </item>
+        <item>18-24°С</item>
+        <item>0,5 см</item>
+        <item>50 см</item>
+        <item>55 см</item>
+        <item>80 дней</item>
+    </string-array>
+    <string-array name="pumpkin">
+        <item>Тыква</item>
+        <item>
+            Особенности:\n
+            ♦Плод любит солнечный свет\n\n
+            ♦Любит компост\n\n
+            ♦Не выносит прохладу\n\n
+            ♦Не переносит жару\n\n
+            ♦Не требует много влаги\n\n
+            ♦Нельзя выращивать в теплице
+        </item>
+        <item>
+           Тыква — род травянистых растений семейства Тыквенные.Под словом «тыква» в России
+          обычно понимаются виды Тыква обыкновенная и Тыква гигантская, широко распространённые
+          и культивируемые как пищевое и кормовое растение. В отличие от декоративных, съедобные
+          сорта тыквы употребляются в пищу. После тепловой обработки варёная или печёная тыква
+          очень хорошо усваивается организмом и широко применяется даже для детского и диетического
+          питания. Также хорошо используется для салатов и гарниров.
+        </item>
+        <item>15-20°С</item>
+        <item>1 см</item>
+        <item>90 см</item>
+        <item>110 см</item>
+        <item>101 день</item>
+    </string-array>
+    <string-array name="carrot">
+        <item>Морковь</item>
+        <item>
+            Особенности:\n
+            ♦Плод любит солнечный свет\n\n
+            ♦Любит рыхлую почву\n\n
+            ♦Любит влагу\n\n
+            ♦Любит обилие удобрений\n\n
+            ♦Любит тепло\n\n
+            ♦Можно выращивать в теплице/огороде
+        </item>
+        <item>
+           Морковь посевная — двулетнее растение, подвид вида морковь дикая. Обычно
+          в быту под словом «морковь» подразумевается широко распространенный корнеплод
+          именно этого растения. Культивируется на протяжении четырёх тысяч лет, в настоящее
+          время выведено множество разновидностей и культиваров (сортов) этого вида.Предположительно,
+          морковь впервые начали выращивать в Афганистане, где до сих пор произрастает больше
+          всего различных видов моркови. Ближайшим диким видом является дикая морковь: культурные сорта
+          были выведены из неё путём селекции. Из сброшенных семян садовой моркови обычно получаются
+          растения со съедобным ветвистым корнем, отличающимся горьким, деревянистым привкусом.
+        </item>
+        <item>6-20°С</item>
+        <item>1 см</item>
+        <item>5 см</item>
+        <item>25 см</item>
+        <item>65 дней</item>
+    </string-array>
+    <string-array name="squash">
+        <item>Патиссон</item>
+        <item>
+            Особенности:\n
+            ♦Плод любит пространство\n\n
+            ♦Любит влагу\n\n
+            ♦Любит тепло\n\n
+            ♦Любит солнечный свет\n\n
+            ♦Любит удобрения\n\n
+            ♦Нельзя выращивать в теплице
+        </item>
+        <item>
+           Патиссоны (тарелочные тыквы) – более влаголюбивая и требовательная к условиям выращивания
+          культура, чем кабачки. Патиссоны имеют кустовую форму. Плоды белые и желтые, форма плода
+          сильно сплюснутая, медузовидная, мякоть упругая, хрустящая, нежная. По вкусу этот овощ напоминает
+          грибы. Патиссоны хороши вареными, тушеными, жареными, их маринуют и солят. В пищу идут как молодые
+          завязи, так и крупные плоды. Они также являются лечебным и диетическим продуктом.
+        </item>
+        <item>15-24°С</item>
+        <item>4 см</item>
+        <item>45 см</item>
+        <item>100 см</item>
+        <item>70 дней</item>
+    </string-array>
+    <string-array name="temperature_max">
+        <item>Высокая температура в теплице!</item>
+        <item>В вашей теплице слишком высокая температура!</item>
+        <item>Высокая температура, откройте форточки в теплице!</item>
+        <item>Температура в теплице поднялась выше нормы!</item>
+    </string-array>
+    <string-array name="temperature_min">
+        <item>Низкая температура в теплице!</item>
+        <item>В вашей теплице слишком низкая температура!</item>
+        <item>Низкая температура, закройте форточки в теплице!</item>
+        <item>Температура в теплице опустилась ниже нормы!</item>
+    </string-array>
+    <string-array name="humidity_min">
+        <item>Низкая влажность в теплице!</item>
+        <item>В вашей теплице слишком сухо!</item>
+        <item>Низкая влажность, закройте форточки в теплице!</item>
+        <item>Влажность в теплице опустилась ниже нормы!</item>
+    </string-array>
+    <string-array name="humidity_max">
+        <item>Высокая влажность в теплице!</item>
+        <item>В вашей теплице слишком влажно!</item>
+        <item>Высокая влажность, откройте форточки в теплице!</item>
+        <item>Влажность в теплице поднялась выше нормы!</item>
+    </string-array>
+    <!-- Strings relatedfragment_login_tabsogin -->
+    <string name="title_activity_login">Вход</string>
+    <string name="login_info">Войдите для того, чтобы воспользоваться теплицей</string>
+
+    <string name="label_google_sign_in">Firebase + Google Sign In</string>
+    <string name="desc_google_sign_in">Use a Google Sign In credential to authenticate with Firebase.</string>
+
+    <string name="label_facebook_login">Firebase + Facebook Login</string>
+    <string name="desc_facebook_login">Use a Facebook Login credential to authenticate with Firebase.</string>
+
+    <string name="label_twitter_login">Firebase + Twitter Login</string>
+    <string name="desc_twitter_login">Use a Twitter Login credential to authenticate with Firebase.</string>
+
+    <string name="label_emailpassword">Email/Password Authentication</string>
+    <string name="desc_emailpassword">Use an email and password to authenticate with Firebase.</string>
+
+    <string name="label_passwordless">Passwordless Authentication</string>
+    <string name="desc_passwordless">Use only an email to authenticate with Firebase.</string>
+
+    <string name="label_phone_auth">Phone Number Authentication</string>
+    <string name="desc_phone_auth">Use a phone number to authenticate with Firebase.</string>
+
+    <string name="label_anonymous_auth">Anonymous Authentication</string>
+    <string name="desc_anonymous_auth">Sign in anonymously and then later upgrade to a full Firebase Auth user.</string>
+
+    <string name="label_custom_auth">Custom Authentication</string>
+    <string name="desc_custom_auth">Use a custom token signed by your own server to authenticate with Firebase.</string>
+
+    <string name="label_firebase_ui">FirebaseUI Auth</string>
+    <string name="desc_firebase_ui">Use the FirebaseUI-Android library to authenticate with Firebase.</string>
+
+    <string name="hint_user_id">User ID</string>
+    <string name="get_custom_token">Получить Token</string>
+    <string name="sign_in">Войти</string>
+    <string name="create_account">Создать Аккаунт</string>
+    <string name="send_link">Send Link</string>
+    <string name="sign_out">Назад</string>
+    <string name="verify_email">Подтвердить</string>
+    <string name="disconnect">Отключение</string>
+    <string name="loading">Загрузка…</string>
+    <string name="custom_token">Custom Token</string>
+    <string name="signed_in">Вы успешно вошли!</string>
+    <string name="signed_out">Вы успешно вышли!</string>
+    <string name="token_null">Token: null</string>
+    <string name="hint_email">Почта</string>
+    <string name="action_sign">Войти</string>
+    <string name="welcome">Добро пожаловать, я твой помощник!</string>
+    <string name="hint_repeat_password">Повторите пароль</string>
+    <string name="connect_to_greenhouse_button">Подключиться к теплице</string>
+    <string name="waiting_connecting">Ожидание подключения</string>
+    <string name="greenhouse_not_connected">Ваша теплица еще не подключена!</string>
+    <string name="hint_password">Пароль</string>
+    <string name="auth_failed">Не удалось создать аккаунт</string>
+    <string name="start_phone_auth">Start</string>
+    <string name="verify_phone_auth">Verify</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="hint_phone_number">Номер Телефона</string>
+    <string name="hint_verification_code">Verification Code</string>
+    <string name="status_code_sent">Code Sent</string>
+    <string name="status_verification_failed">Verification failed</string>
+    <string name="status_verification_succeeded">Verification succeeded</string>
+    <string name="status_sign_in_failed">Sign-in failed</string>
+    <string name="instant_validation">(instant validation)</string>
+
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+
+    <string name="google_status_fmt">Google User: %s</string>
+    <string name="google_title_text">Google Sign In</string>
+
+    <string name="facebook_status_fmt">Facebook User: %s</string>
+    <string name="facebook_title_text">Facebook Login</string>
+
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="emailpassword_title_text">Email and Password</string>
+
+    <string name="passwordless_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="passwordless_title_text">Passwordless Sign In</string>
+    <string name="status_email_not_sent">Send link to your email to get started.</string>
+    <string name="status_email_sent">Link sent, check your email to continue.</string>
+    <string name="status_link_found">Link received, enter email to sign in.</string>
+
+    <string name="phone_title_text">Phone Number</string>
+
+    <string name="twitter_status_fmt">Twitter User: %s</string>
+    <string name="twitter_title_text">Twitter Login</string>
+
+    <string name="firebaseui_status_fmt">Firebase User: %s</string>
+    <string name="firebaseui_title_text">FirebaseUI Auth</string>
+
+    <string name="id_fmt">User ID: %s</string>
+    <string name="email_fmt">Email: %s</string>
+    <string name="title_activity_">Activity</string>
+</resources>
